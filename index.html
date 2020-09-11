@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>CV</title>
 </head>
-<body>
+<style>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+</style>
+<body >
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="text-decoration: underline;">
         <div class="content">
             <img src="./image/bootstra.png" alt="logo" style="height: 40px;">
             
@@ -20,10 +23,10 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active  ">
-              <a class="nav-link" href="#">compétence</a>
+              <a class="nav-link" href="#compt">compétence</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">loisir</a>
+                <a class="nav-link" href="#lois">loisirs</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#">contact</a>
@@ -33,7 +36,7 @@
         </div>
       </nav>
 
-      <div class="container-fluide">
+      <div class="container-fluide " id="cours"></div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -63,7 +66,97 @@
       </div>
 
 
+<div class="row mt-4"  >
+    <div class="col-sm-5">
+      <div class="row">
+        <div class="col-sm-10">
+          <img src="./image//photozak (1).jpg" alt="avatar" >
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 ml-auto "  >
+      <div class="row justify-content-start" style="padding: 10px;margin-top: 10px;">
+        <div class="col-12">
+          <span>nom et prénom : mahboub zakariaa</span>
+        </div>
+        <div class="col-12">
+          <span>email : zakariaamahboub@gmail.com</span>
+        </div>
+        <div class="col-12">
+          <span>adresse : 315,ambassadeur ben Aicha, Roches Noires, Casablanca</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row my-5" id="compt">
+    <div class="col-8 col-md-4 justify-content-center d-flex">
+      <div class="row">
+        <h1 class="col-12" >comptence 1</h1>
+        <p class="col-12">
+            design ,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam libero eos quas veritatis nobis illum consectetur assumenda quam sit labore dolorem non distinctio repellat placeat laboriosam nam, esse eius eum?</p>
+      </div>
+    </div>
+    <div class="col-8 col-md-4 justify-content-center d-flex" >
+      <div class="row">
+        <h1 class="col-12" >comptence 2</h1>
+        <p class="col-12">
+            programmation,Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis alias natus recusandae dicta fugiat cumque vitae eveniet sequi magni eaque iusto in numquam porro distinctio consequuntur, nisi officia fugit quis.
+    </div>
+    </div>
+    <div class="col-8 col-md-4 justify-content-center d-flex">
+      <div class="row">
+        <h1 class="col-12" >comptence 3</h1>
+        <p class="col-12">
+          In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Wikipedia</p>
+      </div>
+    </div>
 </div>
+<div class="row " id="lois">
+    <div class="col-7 ">
+        <div class="row " >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r5HXPS3cky8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="row">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hOcoF_hbXhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+      </div>
+</div>
+
+
+<div class="row mt-4">
+            <div class="col-md-6">
+             
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26578.0848090135!2d-7.530122560560438!3d33.62448435048658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd286995ef37%3A0xe62ecd08529094e4!2sRoches%20Noires%2C%20Casablanca!5e0!3m2!1sfr!2sma!4v1599820932583!5m2!1sfr!2sma"
+                    width="100%" height="300px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+            <div class="col-md-6" id="contact">
+                <form>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="objet" class="col-sm-2 col-form-label">Objet:</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="objet" name="objet">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" id="msg" name="msg"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-block btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+
+
+
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
